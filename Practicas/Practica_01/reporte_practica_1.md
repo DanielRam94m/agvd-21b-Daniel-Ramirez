@@ -42,10 +42,12 @@ A continuación se listará lo aprendido de cada script de python agrupados seg�
 * También podemos graficar densidades rellenando contornos al usar `contourf()` es buena idea de convinar con las funciones `cmap=` y `colorbar()` para hacer un gráfico más completo.
 * También podríamos nuevamente ajustar la transparencia con `alpha=` y resaltar los contornos con etiquetas con `plt.clabel()`
 #### 8. viz6_histograms.ipynb
-*
+* Con `histtype='stepfilled'` al combinarlo con `alpha=` para graficar distintas variables y que se puedan distinguir en casos de traslapes.
 #### 9. viz7_legends.ipynb
-* 
+* Es posible poner varios niveles de *labels* o etiquetas en los gráficos, esto primero graficando con el primer nivel de *labels* y una vez creado irle agregando nuevos niveles de *lebels*.
 #### 10. viz8_colorbars.ipynb
-* 
+* Con `imshow()` podemos personalozar algunas características de la graficación. Por ejemplo podemos agregar `cmap='gray'` para cambiarlos a un esquema de escala de grises.
+* Podemos ver escalas de colores en RGB y también su versión respectiva en escala de grisis con el uso de `view_colormap()`. Algunos ejemplos de temas de colores que podemos poner dentro de esos paréntesis pueden ser *'jet'*, *'viridis'*, *'cubehelix'* o *'RdBu'*, por mencionar algunos.
+* Los colores de barras que normalmente vienen en un degradado continuo también pueden ser discretizados a usar la función `plt.cm.get_cmap()`
 #### 11. viz9_basemap.ipynb
-* 
+* Me salen errores al intentar instalar las librerías de esta e intenté de varias formas sin cambio, por lo que esta en particular no pude realizarla
