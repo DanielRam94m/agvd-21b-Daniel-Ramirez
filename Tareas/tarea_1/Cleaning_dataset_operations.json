@@ -1,0 +1,381 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Date limite de traitement",
+    "description": "Remove column Date limite de traitement"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Statut particulier bac",
+    "description": "Remove column Statut particulier bac"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Statut particulier bourse",
+    "description": "Remove column Statut particulier bourse"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Statut particulier autre",
+    "description": "Remove column Statut particulier autre"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Exonération",
+    "description": "Remove column Exonération"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Nom de l'étudiant",
+    "description": "Remove column Nom de l'étudiant"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Prénom de l'étudiant",
+    "description": "Remove column Prénom de l'étudiant"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Adresse mail",
+    "description": "Remove column Adresse mail"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Téléphone fixe",
+    "description": "Remove column Téléphone fixe"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Téléphone portable",
+    "description": "Remove column Téléphone portable"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Etablissement de la candidature",
+    "description": "Remove column Etablissement de la candidature"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Composante de la candidature",
+    "description": "Remove column Composante de la candidature"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Site de la candidature",
+    "description": "Remove column Site de la candidature"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Etat de la candidature",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avis SCAC favorable le 04/03/2019",
+          "Avis SCAC favorable le 21/01/2019",
+          "Avis SCAC favorable le 21/02/2019"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "favorable"
+      }
+    ],
+    "description": "Mass edit cells in column Etat de la candidature"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Etat de la candidature",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Avis SCAC défavorable le 08/02/2019",
+          "Avis SCAC défavorable le 12/02/2019",
+          "Avis SCAC défavorable le 16/03/2019"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "défavorable"
+      },
+      {
+        "from": [
+          "Avis SCAC défavorable le 12/02/2019",
+          "Avis SCAC défavorable le 16/03/2019"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "défavorable"
+      }
+    ],
+    "description": "Mass edit cells in column Etat de la candidature"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Etat de la candidature",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "défavorable"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Défavorable"
+      }
+    ],
+    "description": "Mass edit cells in column Etat de la candidature"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Etat de la candidature",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "favorable"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Favorable"
+      }
+    ],
+    "description": "Mass edit cells in column Etat de la candidature"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Adresse de résidence",
+    "description": "Remove column Adresse de résidence"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Dernier test de français obtenu",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Dernier test de français obtenu"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Niveau global du dernier test obtenu",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Niveau global du dernier test obtenu"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Score global du dernier test obtenu",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "-1"
+      }
+    ],
+    "description": "Mass edit cells in column Score global du dernier test obtenu"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Date d'obtention du dernier test obtenu",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "01/01/1000"
+      }
+    ],
+    "description": "Mass edit cells in column Date d'obtention du dernier test obtenu"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Date d'expiration du dernier test obtenu",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "01/01/1000"
+      }
+    ],
+    "description": "Mass edit cells in column Date d'expiration du dernier test obtenu"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Région",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Région"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Pays",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Pays"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Volume d'heures",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Volume d'heures"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Durée d'étude",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Durée d'étude"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Niveau obtenu",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Niveau obtenu"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Capacité à se faire comprendre",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Capacité à se faire comprendre"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Capacité à comprendre",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "N/A"
+      }
+    ],
+    "description": "Mass edit cells in column Capacité à comprendre"
+  }
+]
