@@ -14,6 +14,10 @@ Como podemos observar en las figuras 1 y 2 el dateset consiste en 4024 observaci
 ### Tratamiento que requrió el data set:
 Es necesario antes de trabajar con el dataset hacer unos trabajos con este primero para limpiarlo.
 
+| ![image03](./Images/Tarea1_imagen03.png) | ![image04](./Images/Tarea1_imagen04.png) |
+|------|------|
+| Figura  3: Ejemplo de variables con pocas o ninguna entrada con valor no vacío | Figura  4: Eliminación de variables que aportan muy pocos valores de entrada para generarnos valor considerable |
+
 ![image03](./Images/Tarea1_imagen03.png)*Figura  3: Ejemplo de variables con pocas o ninguna entrada con valor no vacío* ![image04](./Images/Tarea1_imagen04.png)*Figura  4: Eliminación de variables que aportan muy pocos valores de entrada para generarnos valor considerable*
 
 Entre los tratamientos que requirió el dataset tenemos la presencia de culumnas vacías en las que existe el nombre de la variable en el *header*, pero que sin embargo todas las entradas en esta columna se encuentran vacías. Estas variables o columnas corresponden a las de:
